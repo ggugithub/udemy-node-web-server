@@ -37,6 +37,13 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/project', (req, res) => {
+    res.render('project.hbs', {
+        headerTitle: 'Project Portfolio',
+        projectPortfolio: 'Project portfolio description'
+    });
+});
+
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         headerTitle: 'About Page'
